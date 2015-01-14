@@ -1,0 +1,21 @@
+body, div, ul, li, p, img {border:0; margin:0; padding:0;}
+body {font-family:Verdana; background:#799AE1; font-size:12px;}
+#body {width:158px; margin:auto;}
+.a, .b, .d, .e, .f {font-weight: bold;}
+.a {height:25px; width:150px; clear:both; background: url('../images/bg1.gif'); margin-top:13px; line-height:25px; padding-left:8px;}
+.b {height:25px; width:150px; clear:both; background: url('../images/bg2.gif'); cursor:pointer; margin-top:13px; line-height:25px; padding-left:8px;}
+.c {width:156px; clear:both; border-right:1px solid #ffffff; background:repeat-y url('../images/d.gif') #D6DFF7; border-left:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+.d {height:21px; width:158px; clear:both; background: url('../images/bg3.gif'); color:#FFF; text-align:center; padding-top:17px;}
+* html .d {height:19px; padding-top:19px;}
+*+html .d {height:19px; padding-top:19px;}
+.e {height:25px; width:150px; clear:both; background: url('../images/bg4.gif'); padding-left:8px; line-height:25px;}
+.f {height:25px; width:150px; clear:both; background: url('../images/bg5.gif'); padding-left:8px; line-height:25px; margin-top:13px;}
+p {height:25px; width:142px; line-height:25px; clear:both; padding-left:14px;}
+a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: none;
+	color: #F00;
+}

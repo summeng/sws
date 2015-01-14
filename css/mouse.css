@@ -1,0 +1,9 @@
+/*鼠标悬停提示框*/
+/*例：<a class="info" href="#"><img src="../images/memo.gif"  BORDER="0" /><span>你现在来到了<br>天天网络科技！</span></a>*/
+<style type="text/css">
+.info {position:relative;background:#fff;color:#666; text-decoration:none;font-size:12px;width:150px;text-align:center;border:1px solid #ccc;height:25px;line-height:25px;}/*设置链接的属性,一定要设置为relative才能使提示层跟着链接走*/
+.info:hover {background:#eee;color:#333;}
+.info span {display: none }/*设置正常下的span为隐藏状态*/
+.info:hover span /*设置hover下的span属性为呈现状态,并设置提示层的位置*/{display:block;position:absolute;top:200px;left:60px;width:200px;
+border:1px solid #DC5826; background:#FFF3B4; color:#333;padding:5px;text-align:left;}
+</style>

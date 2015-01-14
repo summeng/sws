@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Expires" content="Thu, 06 Nov 2008 12:00:00 GMT">
+<title>天天网络科技闹钟</title>
+<STYLE type=text/css>
+BODY {MARGIN: 0px;FONT-SIZE: 12px;FONT-FAMILY:"宋体";color:#000000;LINE-HEIGHT:20px;}
+.w299{width:299px; margin:0px auto}
+.font6 td{color:#666666}
+.white12{color:#ffffff;font-weight:bold;}
+.s2 {color: #49677F; font-weight: bold; }
+.t3 {line-height: 140%; }
+a:link,a:visited{}
+img{border:0px;}
+form{margin:0px; padding:0px;}
+</STYLE>
+</head>
+<script src="js/setClock.js"></script>
+<script src="js/checkClock.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+clockStart();
+//-->
+</script>
+
+<body onbeforeunload="warnUser();">
+<bgsound id="clock_mid" src="" LOOP="-1">
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="w299">
+	<tr>
+		<td width="83" id="tab1"><a href='###'><img onclick="tabChange('1');"  src="i/clock_cur_1.gif" width="83" height="22" /></a></td>
+	    <td width="1"></td>
+	    <td width="83" id="tab2"><a href='###'><img onclick="tabChange('2');"  src="i/clock_2.gif" width="83" height="22" /></a></td>
+	    <td width="2"></td>
+	    <td width="83" id="tab3"><a href='###'><img onclick="tabChange('3');"  src="i/clock_3.gif" width="83" height="22" /></a></td>
+	    <td>&nbsp;</td>
+	</tr>
+</table>
+<div id="tabBody1" style="display:block;">
+<form name="clockForm1" method="post" action="clock_server.php">
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="w299">
+	<tr>
+		<td id="cobg" height="35" align="center" background="i/cobg1.gif" class="white12">
+		    <input type="hidden" name="kg" value="0" />
+		</td>
+	</tr>
+	<tr>
+    	<td height="250" align="center" valign="top" background="i/bg.gif">
+    		<table id='clockParams1' width="280"  border="0" cellpadding="3" cellspacing="1" class="font6" style="margin-top:5px;">
+    				<tr align="left">
+    					<td width="65" align="right"><strong>闹钟时间：</strong></td>
+    					<td>
+						<script>
+						hourSelectList('1');
+						</script>时
+						<script>
+						minutesSelectList('1');
+						</script>分
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>铃声类型：</strong></td>
+    					<td><script>musicSelectList(1);</script>
+        				<input name="testMusicButton" type="button" onclick="playMusic(1);" value="试听" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>提示文字：</strong></td>
+    					<td><input name="title" type="text" value="不早了，该休息了！" size="25" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>重复设置：</strong></td>
+    					<td>
+						<input name="isRepeat" type="radio" value="0" checked="checked" />只闹一次
+						<input name="isRepeat" type="radio" value="1" />重复
+						<script>repeatSelectList(1);</script>
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td height="30" colspan="2" align="center">
+						<input title="" name='kgTitle' type="button" onclick="setClock(1)" value="开启闹钟" /></td>
+   					</tr>
+   			</table>
+    		<table width="280" border="0" align="center" cellpadding="4" cellspacing="0" class="t3">
+    			<tr>
+    				<td width="100%" colspan="4" align="left"><span class="s2"><a href="http://www.ip126.com" target="_blank">天天网络科技闹钟</a>，温馨提示：</span><br />
+					1、您需要打开闹钟页,关闭该页闹钟功能将失效。<br />
+					2、您需要打开音箱或配戴耳机,以便听到铃声。<br />
+					3、闹钟以您电脑时间为准，请先校对好本机时间。</td>
+   				</tr>
+    			</table>
+	  </td>
+	</tr>
+</table>
+<input type="hidden" name="formId" value="1" />
+<!-- <input type="submit" value="submit" /> -->
+</form></div>
+<div id="tabBody2" class="tabBody" style="display: none;">
+<form name="clockForm2" method="post" action="clock_server.php">
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="w299">
+	<tr>
+		<td id="cobg" height="35" align="center" background="i/cobg2.gif" class="white12">
+		    <input type="hidden" name="kg" value="0" />
+		</td>
+	</tr>
+	<tr>
+    	<td height="250" align="center" valign="top" background="i/bg.gif">
+    		<table id='clockParams2' width="280"  border="0" cellpadding="3" cellspacing="1" class="font6" style="margin-top:5px;">
+    				<tr align="left">
+    					<td width="65" align="right"><strong>闹钟时间：</strong></td>
+    					<td>
+						<script>
+						hourSelectList('2');
+						</script>时
+						<script>
+						minutesSelectList('2');
+						</script>分
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>铃声类型：</strong></td>
+    					<td><script>musicSelectList(2);</script>
+        				<input name="testMusicButton" type="button" onclick="playMusic(2);" value="试听" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>提示文字：</strong></td>
+    					<td><input name="title" type="text" value="得陪女友逛街了！" size="25" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>重复设置：</strong></td>
+    					<td>
+						<input name="isRepeat" type="radio" value="0" checked="checked" />只闹一次
+						<input name="isRepeat" type="radio" value="1" />重复
+						<script>repeatSelectList(2);</script>
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td height="30" colspan="2" align="center">
+						<input title="" name='kgTitle' type="button" onclick="setClock(2)" value="开启闹钟" /></td>
+   					</tr>
+   			</table>
+    		<table width="280" border="0" align="center" cellpadding="4" cellspacing="0" class="t3">
+    			<tr>
+    				<td width="100%" colspan="4" align="left"><span class="s2"><a href="http://www.ip126.com" target="_blank">天天网络科技闹钟</a>，温馨提示：</span><br />
+					1、您需要打开闹钟页,关闭该页闹钟功能将失效。<br />
+					2、您需要打开音箱或配戴耳机,以便听到铃声。<br />
+					3、闹钟以您电脑时间为准，请先校对好本机时间。</td>
+   				</tr>
+    			</table>
+	  </td>
+	</tr>
+</table>
+<input type="hidden" name="formId" value="2" />
+<!-- <input type="submit" value="submit" /> -->
+</form>
+</div>
+<div id="tabBody3" class="tabBody" style="display: none;">
+<form name="clockForm3" method="post" action="clock_server.php">
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="w299">
+	<tr>
+		<td id="cobg" height="35" align="center" background="i/cobg3.gif" class="white12">
+		    <input type="hidden" name="kg" value="0" />
+		</td>
+	</tr>
+	<tr>
+    	<td height="250" align="center" valign="top" background="i/bg.gif">
+    		<table id='clockParams3' width="280"  border="0" cellpadding="3" cellspacing="1" class="font6" style="margin-top:5px;">
+    				<tr align="left">
+    					<td width="65" align="right"><strong>闹钟时间：</strong></td>
+    					<td>
+						<script>
+						hourSelectList('3');
+						</script>时
+						<script>
+						minutesSelectList('3');
+						</script>分
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>铃声类型：</strong></td>
+    					<td><script>musicSelectList(3);</script>
+        				<input name="testMusicButton" type="button" onclick="playMusic(3);" value="试听" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>提示文字：</strong></td>
+    					<td><input name="title" type="text" value="球赛直播开始了！" size="25" /></td>
+   					</tr>
+    				<tr align="left">
+    					<td align="right"><strong>重复设置：</strong></td>
+    					<td>
+						<input name="isRepeat" type="radio" value="0" checked="checked" />只闹一次
+						<input name="isRepeat" type="radio" value="1" />重复
+						<script>repeatSelectList(3);</script>
+						</td>
+   					</tr>
+    				<tr align="left">
+    					<td height="30" colspan="2" align="center">
+						<input title="" name='kgTitle' type="button" onclick="setClock(3)" value="开启闹钟" /></td>
+   					</tr>
+   			</table>
+    		<table width="280" border="0" align="center" cellpadding="4" cellspacing="0" class="t3">
+    			<tr>
+    				<td width="100%" colspan="4" align="left"><span class="s2"><a href="http://www.ip126.com" target="_blank">天天网络科技闹钟</a>，温馨提示：</span><br />
+					1、您需要打开闹钟页,关闭该页闹钟功能将失效。<br />
+					2、您需要打开音箱或配戴耳机,以便听到铃声。<br />
+					3、闹钟以您电脑时间为准，请先校对好本机时间。</td>
+   				</tr>
+    			</table>
+	  </td>
+	</tr>
+</table>
+<input type="hidden" name="formId" value="3" />
+<!-- <input type="submit" value="submit" /> -->
+</form></div>
+
+<script language="javascript" type="text/javascript">
+<!--
+setPreValue();
+var hotTabId = GetCookie('clock_hotTab');
+if( hotTabId !=null )tabChange( hotTabId );
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body {margin:0; padding:0; background:#285CCD; font-size:12px;}
+#body1 {width:20%; height:30px; float:left;}
+#body2 {width:60%; height:30px; line-height:30px; float:left; text-align:center;}
+a:link, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: none;
+	color: #ff0000;
+}
+.a_input{border:0px; background:#599AE1; color:#ffffff; font-size:12px; font-family:Verdana; padding-top:2px; margin-left:20px; margin-top:9px; cursor:pointer;}
+.spa {FONT-SIZE: 9pt; FILTER: Glow(Color=#0F42A6, Strength=2) dropshadow(Color=#0F42A6, OffX=2, OffY=1,); COLOR: #8AADE9; FONT-FAMILY: 'ËÎÌו'}
+a:link { color:#ffffff;text-decoration:none}

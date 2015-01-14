@@ -1,0 +1,25 @@
+/* 转载请保留版权信息：懒人图库 www.lanrentuku.com */
+*{ padding:0; margin:0; font-size:12px}
+ul,li{ list-style:none;}
+img{ border:0;}
+#zSlider{margin:0px auto; width:520px; overflow:hidden;}
+#picshow{position:relative;}
+#picshow,#picshow_img{width:440px; height:250px; overflow:hidden; float:left;}
+#picshow_img li{width:440px; height:250px; overflow:hidden; float:left; display:none;}
+#picshow_img img{width:440px; height:250px;}
+#picshow_tx{left:0px; width:440px; bottom:0px; position:absolute; height:40px; overflow:hidden;}
+#picshow_tx li{background:url(../images/picshow_bg.png) repeat; padding:5px 30px; height:50px; color:#fff; display:none;}
+#picshow_tx li a{color:#fff;}
+#picshow_tx li a:hover{text-decoration:underline;}
+#picshow_tx li h3{ margin:13px 0;}
+#picshow_tx li p{ color:#ccc; line-height:16px; height:16px; overflow:hidden;}
+#select_btn{width:75px; height:250px; color:#111; float:right; display:inline; background-color:#3CA0DC;}
+#select_btn li{padding:5px 3px 0px 3px; width:250px; height:43px; border-top:1px solid #fff; cursor:pointer;}
+#select_btn li:hover{background-color:#fff;}
+#select_btn li.current{background-color:#FFFF00;}
+#select_btn li.current:hover{background-color:#fff;}
+#select_btn a{color:#000;}
+#select_btn img{padding:2px; border:1px solid #ccc; width:64px; height:39px; margin-right:5px; float:left;}
+#select_btn .select_text{ height:5px; font:bold 13px/16px 'Microsoft YaHei'; overflow:hidden; display:block;}
+#select_btn .select_text:hover{text-decoration:underline;}
+#select_btn .select_date{ height:23px; line-height:23px; overflow:hidden; display:block;}

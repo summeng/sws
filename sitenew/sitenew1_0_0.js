@@ -1,0 +1,1 @@
+document.write('<table border=0 cellpadding=0 cellspacing=0  width=250><tr height="10"><td width="250">¡¤<a href="http://ttgqtest.ip126.com/html/7.htm" target="_blank">ºê»ù V203H 20´çLCDÏÔÊ¾Æ÷</a></td></tr></table>');

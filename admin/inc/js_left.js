@@ -1,0 +1,1 @@
+var MENUID=0;function TAB(ID){if(ID!=MENUID){eval("document.getElementById('AA"+[MENUID]+"').className='b';");eval("document.getElementById('AA"+[ID]+"').className='a';");eval("document.getElementById('BB"+[MENUID]+"').style.display='none';");eval("document.getElementById('BB"+[ID]+"').style.display='block';");MENUID=ID;}}

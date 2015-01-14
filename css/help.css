@@ -1,0 +1,75 @@
+@charset "utf-8";
+body { font-family: Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0; text-align:center;}
+img { border:0;}
+ul { list-style:none;}
+form, ul, p, h1, h2, h3 { margin:0; padding:0;}
+a:link, a:visited { color:#666; text-decoration:none;}
+a:hover { text-decoration:underline;}
+ul { list-style:none; margin:0; padding:0;}
+
+.xw {
+	width:980px;
+	text-align:left;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.l { float:left;}
+.r { float:right;}
+.cf { clear:both; font-size:1px; line-height:1%; display:block; height:0px;}
+.yspace { margin:10px 0 0 0;}
+
+.top { background:url(top.gif) left bottom repeat-x;}
+	.logo { margin:10px 0 10px 0;}
+	.nav { margin:50px 0 0 0; font-size:13px;}
+	.nav a:link, .nav a:visited { color:#04d;}
+	
+.navBar { background:#f2f2f2; color:#666; padding:5px 10px;}
+	.navBar a:link, .navBar a:visited { color:#04d;}
+	
+.content { margin:20px auto 30px auto;}
+
+	.leftBar {
+	width:160px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+		.listMenu { margin:0 10px;}
+			.listMenu li { font-size:13px; padding:5px 0; border:1px solid #eeeeee; margin:0 0 2px 0; text-align:center; background:#fbfbfb;}
+			.listMenu li.current { border:1px solid #ccc; background:none; border-right:none;}
+				.listMenu li.current a:link, .listMenu li.current a:visited { color:#666;}
+		
+	.rightTxt {
+	width:790px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+				.rightTxt a:link, .rightTxt a:visited { color:#0E449C;}
+		.view { padding:0 10px 0 0;}
+			.viewNav { color:#666; margin:0 0 15px 0;}
+			.view h2 { font-size:16px; color:#000; border-bottom:1px dashed #ccc; padding:0 0 4px 0;}
+				.view h2 span { font-size:12px; font-weight:normal;}
+			.view h3 { font-size:12px; background:#f5f5f5; padding:3px 0; margin:0 0 8px 0;}
+			.view .time { margin:8px 0 0 0; color:#666;}
+			.view .txt { padding:15px 0 0 0; line-height:1.8em; font-size:12px;}
+				.view .txt p { margin:0 0 6px 0;}
+				.view .txt .newsList li {	background:url(circleDot.gif) 5px 8px no-repeat; padding:0 0 0 18px; height:22px; white-space:nowrap;}
+			.view table { border-collapse:collapse; width:100%; margin-bottom:10px;}
+				.view table th { border:1px solid #ccc; padding:2px 6px;}
+				.view table td { border:1px solid #ddd; padding:2px 6px;}
+			.view fieldset { border:1px solid #ddd; padding:0px 10px; margin:10px 0 0 0;}
+				.view legend { font-weight:bold; padding:0 6px;}
+				.view fieldset .info { padding:10px 0;}
+
+.bot { border-top:1px solid #ddd; padding:10px 0 20px 0; text-align:center; color:#666;}
+	.bot a:link, .bot a:visited { color:#333;}
+	
+	    .linkInfo { padding:0 0 10px 0;}
+		.linkInfo div { padding:10px 0 0 10px;}
+		.linkInfo .imgLink li { float:left; width:115px; white-space: nowrap; height:40px; border-bottom:none;}
+		.linkInfo .textLink li { float:left; width:115px; white-space: nowrap; height:25px; border-bottom:none;}
